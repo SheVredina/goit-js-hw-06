@@ -2,7 +2,7 @@ const inputEl = document.querySelector('#name-input');
 const textOutput = document.querySelector("#name-output");
 
 
-inputEl.addEventListener('input', (onInput)) ;
+inputEl.addEventListener('input', onInput) ;
 
 function onInput (event) {
     if(!event.currentTarget.value){
@@ -10,7 +10,7 @@ function onInput (event) {
     };
 
   textOutput.textContent = event.currentTarget.value;
-//   console.log(event);
+  // console.log(event);
  
 }
 
